@@ -1,0 +1,79 @@
+#📊 Bank Marketing Campaign Classification
+
+🧠 Project Overview
+
+This project is a Machine Learning model that predicts whether a bank customer will subscribe to a term deposit or not.
+It is based on real-world bank marketing campaign data containing around 45,000 customer records.
+
+
+The goal is to help banks improve their marketing strategy by identifying potential customers more accurately.
+
+
+🎯 Problem Statement
+
+Banks often waste resources by contacting customers who are not interested in their products.
+
+This project solves that problem by building a classification model that predicts:
+
+
+Yes (1): Customer will subscribe
+No (0): Customer will not subscribe
+📂 Dataset Information
+Source: UCI Machine Learning Repository
+Total Records: ~45,000
+Target Variable: y (yes/no subscription)
+Features include:
+Age
+Job
+Marital Status
+Education
+Call duration
+Month, day, etc.
+⚙️ Technologies Used
+Python 🐍
+Pandas
+NumPy
+Matplotlib
+Seaborn
+Scikit-learn
+XGBoost
+Imbalanced-learn (SMOTEENN)
+🔄 Workflow
+Data Loading
+Data Cleaning (removing duplicates, handling unknowns)
+Exploratory Data Analysis (EDA)
+Encoding categorical variables
+Handling class imbalance using SMOTEENN
+Feature scaling
+Model training
+Model evaluation
+Hyperparameter tuning
+🤖 Machine Learning Models Used
+Logistic Regression
+K-Nearest Neighbors (KNN)
+Decision Tree
+Random Forest
+
+XGBoost (Best Model)
+🏆 Best Model
+
+XGBoost performed the best with approximately:
+
+Accuracy: ~95%
+Best AUC-ROC score
+📊 Key Insight
+
+The most important feature found was:
+
+👉 Call Duration
+Longer calls significantly increase the probability of customer subscription.
+
+🚀 How to Run This Project
+
+git clone https://github.com/Asduuu/Bank-customer-subscription-model.git
+
+cd Bank-customer-subscription-model
+
+pip install -r requirements.txt
+jupyter notebook
+This project demonstrates how machine learning can help banks improve marketing efficiency, reduce costs, and target the right customers effectively.
